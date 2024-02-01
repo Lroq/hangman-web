@@ -1,0 +1,90 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    color: white;
+    text-align: center;
+}
+body {
+    background-color: #262729;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fenetre {
+    width: 650px; 
+    height: 370px; 
+    background-color: #3498db; 
+    margin: 20px;
+    border-radius: 3px;
+    margin-left: 440px;
+    opacity: 0.4;
+
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+  }
+  
+  .cell {
+    color: white;
+    background-color: #292626;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2px;
+  }
+  .cell:hover{
+    background-color:#000000;
+    cursor: pointer;
+  }
+.ranking {
+    width: 180px; 
+    height: 270px; 
+    background-color: #0f3c5a; 
+    border-style: double  ;
+    opacity: 0.4;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: -350px;
+    border-radius: 2%;
+    border-width: 5px;
+    border-color: white;
+
+}
+.settings-button {
+    width: 30px;
+    height: 30px;
+    background-color: #41547d; /* Couleur de fond du bouton (par exemple, vert) */
+    border: none; /* Supprimer la bordure du bouton */
+    border-radius: 50px; /* Ajouter une bordure arrondie au bouton */
+    cursor: pointer; /* Ajouter un pointeur au survol */
+  
+
+}
+.button {
+  margin-top: -1.5%;
+  margin-left: 98%;
+}
+
+img {
+  width: 95%;
+}

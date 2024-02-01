@@ -1,0 +1,173 @@
+/* styles.css */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #1b1b1b 25%, #ffffff);
+  background-size: 300% 300%;
+  background-position: top left;
+  transition: background-color .25s, background-position .5s;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 2%;
+  z-index: 10; /* Make sure it stays on top of other elements */
+}
+
+/* navbar */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* lumiere le before(soleil) et after(lune) */
+
+.toggle {
+  font-size: 2rem; /* 👈 change this to scale */
+  border: .125em solid currentColor;
+  border-radius: 2em;
+  cursor: pointer;
+  display: block;
+  height: 2em;
+  width: 3.75em;
+  position: relative;
+  margin-left: 10px;
+}
+
+.toggle span {
+  background-color: currentColor;
+  border-radius: 2em;
+  display: block;
+  height: 1.5em;
+  left: .25em;
+  overflow: hidden;
+  position: absolute;
+  top: .25em;
+  text-indent: -9999px;
+  transition: left .25s;
+  width: 1.5em;
+  z-index: 2;
+}
+
+.toggle::before,
+.toggle::after {
+  content: '';
+  display: block;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 1;
+}
+
+.toggle::after {
+  box-shadow: .25em .25em #5901d8;
+  height: 1.125em;
+  right: .9em;
+  top: .125em;
+  width: 1.125em;
+}
+
+.toggle::before {
+  background-color: #ffc409;
+  height: .625em;
+  outline: .25em dotted #ffc409;
+  outline-offset: .125em;
+  left: .7em;
+  top: .7em;
+  width: .625em;
+}
+
+input:checked ~ .toggle span {
+  left: 2em;
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .25s;
+  color: #1e1e1e;
+  background: linear-gradient(to bottom right, #eefff4 25%, #252527);
+  background-size: 300% 300%;
+  background-position: top left;
+  transition: background-position .5s;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body:has(#darkmode-toggle:checked) {
+  background-position: 100% 100%;
+  color: #d0d0d0;
+}
+
+/* color text
+
+@keyframes rainbow-text {
+  0% {color: red;}
+  17% {color: rgb(0, 4, 255);}
+  25% {color: red;}
+  50% {color: blue;}
+  67% {color: red;}
+  75% {color: blue;}
+  85% {color: red;}
+  100% {color: blue;}
+
+}*/
+
+.rainbow-text {
+  margin-top: 2%;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  animation: rainbow-text 2s infinite;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* bouton*/
+
+.styled {
+  line-height: 3;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #fafafa;
+  border-radius: 15px;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #555; /* Couleur de fond du bouton pour un look rétro */
+  cursor: pointer;
+  border: 2px solid #555; /* Couleur de la bordure */
+  transition: background-color 0.3s ease; /* Ajoute une transition pour l'effet hover */
+}
+
+/* Style du bouton de recherche lors du survol */
+.styled:hover {
+  background-color: #ffffff; /* Assombrit le bouton lorsque la souris passe dessus */
+  color: #333; /* Assombrir le texte pour qu'il reste lisible sur fond clair */
+}

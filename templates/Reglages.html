@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réglages</title>
+    <link rel="stylesheet" href="static/Reglage.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h1><u>Réglages du Jeu</u></h1>
+
+        <div class="setting">
+            <label for="brightness"><strong>Luminosité:</strong></label>
+            <input type="range" id="brightness" name="brightness" min="0" max="100">
+        </div>
+
+        <div class="setting">
+            <label for="volume"><strong>Volume:</strong></label>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+        </div>
+
+        <div class="setting">
+            <label><strong>Langue du Clavier:</strong></label>
+            <div class="language-options">
+                <input type="radio" id="french" name="language" value="fr" checked>
+                <label for="french">AZERTY</label>
+                <input type="radio" id="english" name="language" value="en">
+                <label for="english">QWERTY</label>
+            </div>
+        </div>
+
+        <div class="setting">
+            <label><strong>Langue du Jeu :</strong></label>
+            <div class="game-language-options">
+                <input type="radio" id="game-english" name="game-language" value="en">
+                <label for="game-english">Anglais</label>
+                <input type="radio" id="game-french" name="game-language" value="fr" checked>
+                <label for="game-french">Français</label>
+                <input type="radio" id="game-spanish" name="game-language" value="es">
+                <label for="game-spanish">Espagnol</label>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
